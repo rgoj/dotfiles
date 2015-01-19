@@ -33,7 +33,16 @@ Plugin 'gmarik/Vundle.vim'
 " Installed Plugins
 " -----------------
 
+Plugin 'scrooloose/syntastic'
+let g:syntastic_javascript_checkers = ["jscs", "jshint"]
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 1
+
+Plugin 'scrooloose/nerdtree'
+
 Plugin 'junegunn/goyo.vim'
+Plugin 'matchit.zip'  " extended % matching for HTML, LaTeX, and many other languages
+Plugin 'elzr/vim-json'  " syntax highlighting for JSON
 
 call vundle#end()  " keep Plugin commands between vundle#begin/end
 
@@ -73,14 +82,17 @@ set expandtab      " Expand tabs into spaces
 " The below mappings are nice, but I have a hunch I should read up a bit on
 " the differences between map, imap, cmap, no recursion, etc.
 
-" Exit editing mode with 'jk' instead of pressing <Esc>
-imap jk <Esc>
-cmap jk <Esc> 
+" Exit editing mode without reaching to <Esc>
+imap ;j <Esc>
+cmap ;j <Esc> 
 
-" (Experimental) Exit editing mode and enter ':' command with ';;'
-imap ;; <Esc>:
-map ;; <Esc>:
+" Exit editing mode and enter command mode immediately
+imap ;k <Esc>:
+map ;k <Esc>:
 
+" Quickly open NERDTree
+imap ;l <Esc>::NERDTreeToggle<CR>
+map ;l :NERDTreeToggle<CR>
 
 " Quick vimrc editing
 " -------------------
