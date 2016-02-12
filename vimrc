@@ -35,11 +35,14 @@ Plugin 'gmarik/Vundle.vim'
 
 Plugin 'scrooloose/syntastic'
 let g:syntastic_javascript_checkers = ["jscs", "jshint"]
-let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 1
 
-Plugin 'scrooloose/nerdtree'
+Plugin 'tpope/vim-markdown'
 
+Plugin 'rking/ag.vim'  " Requires the_silver_searcher to be installed
+
+Plugin 'scrooloose/nerdtree'
+Plugin 'kien/ctrlp.vim'
 Plugin 'junegunn/goyo.vim'
 Plugin 'matchit.zip'  " extended % matching for HTML, LaTeX, and many other languages
 Plugin 'elzr/vim-json'  " syntax highlighting for JSON
