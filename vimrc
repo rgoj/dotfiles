@@ -158,8 +158,8 @@ map ;l :NERDTreeToggle<CR>
 " -------------------
 
 " See these excellent sources [7, 3]
-nnoremap <leader>ev :vsp $MYVIMRC<CR>
-noremap <leader>sv :source $MYVIMRC<CR>
+nnoremap <leader>ev :vsp ~/.vimrc<CR>
+noremap <leader>sv :source ~/.vimrc<CR>
 
 
 " }}}
