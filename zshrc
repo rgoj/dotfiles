@@ -7,7 +7,7 @@ export ZSH=/Users/romek/.oh-my-zsh
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME="robbyrussell"
+ZSH_THEME="fishy"
 
 # Set list of themes to load
 # Setting this variable when ZSH_THEME=random
@@ -58,9 +58,7 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(
-  git
-)
+plugins=()
 
 source $ZSH/oh-my-zsh.sh
 
@@ -95,3 +93,13 @@ source ~/.bashrc
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/romek/Spaces/Projects/Freelancing/AccessMBCT/gcloud/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/romek/Spaces/Projects/Freelancing/AccessMBCT/gcloud/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/Users/romek/Spaces/Projects/Freelancing/AccessMBCT/gcloud/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/romek/Spaces/Projects/Freelancing/AccessMBCT/gcloud/google-cloud-sdk/completion.zsh.inc'; fi

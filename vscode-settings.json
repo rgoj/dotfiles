@@ -1,0 +1,14 @@
+{
+    "window.zoomLevel": 0,
+    
+    "files.autoSave": "afterDelay",
+    "editor.minimap.enabled": true,
+    
+    // Vim extension
+    "vim.foldfix": true,
+    "vim.insertModeKeyBindings": [
+        { "before": [";", "j"], "after":  ["<Esc>"] }
+    ],
+    "vim.enableNeovim": true,
+    "editor.accessibilitySupport": "off",
+}
