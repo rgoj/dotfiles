@@ -6,6 +6,10 @@
     ~/.vimrc: vimrc
     ~/.profile: profile
     ~/.bashrc: bashrc
+    ~/.zshrc: zshrc
+    ~/.ssh/config: ssh-config
+    ~/.config/nvim/init.vim: init.vim
+    ~/Library/Application Support/Code/User/settings.json: vscode-settings.json
 
 - shell:
   - [git submodule update --init --recursive, Installing submodules]
