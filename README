@@ -1,0 +1,9 @@
+# Setup
+
+To set up these dotfiles, simply clone this repository, e.g.:
+
+  git clone git@github.com:rgoj/dotfiles ~/Dotfiles
+
+and run the installation script:
+
+  ./Dotfiles/install

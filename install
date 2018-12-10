@@ -1,5 +1,15 @@
 #!/usr/bin/env bash
 
+#
+# My additions
+#
+mkdir ~/.ssh
+mkdir ~/.config/nvim/
+mkdir ~/Library/Application\ Support/Code/User/
+
+#
+# Dotbot default script follows
+#
 set -e
 
 CONFIG="install.conf.yaml"
