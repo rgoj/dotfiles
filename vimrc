@@ -78,6 +78,9 @@ Plugin 'matchit.zip'  " extended % matching for HTML, LaTeX, and many other lang
 Plugin 'vim-scripts/restore_view.vim'
 set viewoptions=cursor,folds,slash,unix
 
+" Experiment with this folding plugin...
+Plugin 'pseewald/vim-anyfold'
+
 Plugin 'airblade/vim-gitgutter'
 
 " Show syntax group of word under cursor

@@ -1,14 +1,76 @@
 {
-    "window.zoomLevel": 0,
+    "window.zoomLevel": 1,
+
+    "files.autoSave": "off",
+    "editor.minimap.enabled": false,
+
+    "files.insertFinalNewline": true,
+    "files.trimFinalNewlines": true,
     
-    "files.autoSave": "afterDelay",
-    "editor.minimap.enabled": true,
-    
-    // Vim extension
+    /*
+     * Vim extension settings
+     */
     "vim.foldfix": true,
     "vim.insertModeKeyBindings": [
         { "before": [";", "j"], "after":  ["<Esc>"] }
     ],
     "vim.enableNeovim": true,
+    "vim.neovimPath": "/usr/local/bin/nvim/",
     "editor.accessibilitySupport": "off",
+
+    /*
+     * Language-specific settings
+     */
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+        // This enables autoformatting (e.g. prettier) only for Javascript
+        // "editor.formatOnSave": true
+    },
+    "[html]": {
+        "editor.defaultFormatter": "vscode.html-language-features"
+    },
+    // "emmet.includeLanguages": {
+    //     "django-html": "html"
+    // },
+
+    
+    /*
+     * Extension-specific settings
+     */ 
+    
+    "gitlens.codeLens.enabled": false,
+    "gitlens.statusBar.enabled": false,
+    "workbench.iconTheme": "material-icon-theme",
+    "angularConsole.useNVM": false,
+    "html.mirrorCursorOnMatchingTag": false,
+
+    // From the django extension: https://marketplace.visualstudio.com/items?itemName=batisteo.vscode-django
+    // "files.associations": {
+    //     "**/templates/*.html": "django-html",
+    //     "**/templates/*": "django-txt",
+    //     "**/requirements{/**,*}.{txt,in}": "pip-requirements"
+    // },
+
+    "vscode-neovim.neovimPath": "/usr/local/bin/nvim",
+    "editor.multiCursorModifier": "ctrlCmd",
+    "diffEditor.ignoreTrimWhitespace": false,
+    // "[django-html]": {
+    
+    // },
+    // "files.associations": {
+    //     "*.html": "html"
+    // },
+    "typescript.updateImportsOnFileMove.enabled": "never",
+    "[typescript]": {
+        "editor.defaultFormatter": "vscode.typescript-language-features"
+    },
+    "[json]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "files.associations": {
+        "*.html": "html"
+    },
+    "workbench.activityBar.visible": true,
+    "gitlens.hovers.currentLine.over": "line",
+    "gitlens.views.lineHistory.enabled": true,
 }

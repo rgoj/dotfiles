@@ -5,6 +5,7 @@
 #
 mkdir ~/.ssh
 mkdir ~/.config/nvim/
+mkdir ~/Library/Application\ Support/Code/
 mkdir ~/Library/Application\ Support/Code/User/
 
 #

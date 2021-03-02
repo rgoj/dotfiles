@@ -9,6 +9,8 @@
     ~/.zshrc: zshrc
     ~/.ssh/config: ssh-config
     ~/.config/nvim/init.vim: init.vim
+    ~/.gitconfig: gitconfig
+    ~/.gitignore_global: gitignore_global
     ~/Library/Application Support/Code/User/settings.json: vscode-settings.json
 
 - shell:
