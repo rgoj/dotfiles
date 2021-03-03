@@ -4,6 +4,7 @@
     ~/.dotfiles: ''
     ~/.tmux.conf: tmux.conf
     ~/.vimrc: vimrc
+    ~/.zprofile: zprofile
     ~/.profile: profile
     ~/.bashrc: bashrc
     ~/.zshrc: zshrc

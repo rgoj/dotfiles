@@ -1,5 +1,10 @@
 echo "Loading ~/.profile"
 
+#
+# Added by homebrew, originally to .zprofile
+#
+eval $(/opt/homebrew/bin/brew shellenv)
+
 # BASH completion
 if [ -f /opt/local/etc/profile.d/bash_completion.sh ]; then
     . /opt/local/etc/profile.d/bash_completion.sh
